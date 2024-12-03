@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Chatbot</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div class="customization-panel">
+        <h2>Customization Panel</h2>
+        <div class="button-section">
+            <label>Button Icon:</label>
+            <select id="buttonIcon">
+                <option value="?">?</option>
+                <option value="?">?</option>
+                <option value="?">?</option>
+                <option value="??">??</option>
+                <option value="?">?</option>
+            </select>
+        </div>
+
+        <label for="headerColor">Header Background Color:</label>
+        <input type="color" id="headerColor" value="#0078d7">
+
+        <label for="botTextColor">Bot Text Color:</label>
+        <input type="color" id="botTextColor" value="#ffffff">
+
+        <label for="botBubbleColor">Bot Chat Bubble Color:</label>
+        <input type="color" id="botBubbleColor" value="#0078d7">
+
+        <label for="userTextColor">User Text Color:</label>
+        <input type="color" id="userTextColor" value="#000000">
+
+        <label for="userBubbleColor">User Chat Bubble Color:</label>
+        <input type="color" id="userBubbleColor" value="#d3d3d3">
+
+        <label for="borderRadius">Border Radius:</label>
+        <input type="range" id="borderRadius" min="0" max="50" value="10">
+
+        <label for="fontStyle">Font Style:</label>
+        <div class="font-style-options">
+            <button class="font-style" data-font="Arial">Arial</button>
+            <button class="font-style" data-font="Verdana">Verdana</button>
+            <button class="font-style" data-font="Georgia">Georgia</button>
+             <button class="font-style" data-font="Poppins">Poppins</button>
+             <button class="font-style" data-font="Courier New">Courier New</button>
+  
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-header">AI Assistant</div>
+        <div class="chat-box" id="chatBox">
+            <div class="bot-message">Hello! How can I help you today?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="sendBtn">?</button>
+        </div>
+    </div>
+
+    <script src="aiscript.js"></script>
+</body>
+</html>
